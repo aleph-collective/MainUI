@@ -52,9 +52,32 @@ public:
 		void SetShadowHigh();
 
 	UFUNCTION(Exec, BlueprintCallable, Category="Details")
+		void SetEffectsLow();
+	UFUNCTION(Exec, BlueprintCallable, Category="Details")
+		void SetEffectsMedium();
+	UFUNCTION(Exec, BlueprintCallable, Category="Details")
+		void SetEffectsHigh();
+
+	UFUNCTION(Exec, BlueprintCallable, Category="Details")
 		void SetFoliageLow();
 	UFUNCTION(Exec, BlueprintCallable, Category="Details")
 		void SetFoliageMedium();
 	UFUNCTION(Exec, BlueprintCallable, Category="Details")
 		void SetFoliageHigh();
+
+	UFUNCTION(Exec, BlueprintCallable, Category="Performance")
+		void EnableVSync();
+	UFUNCTION(Exec, BlueprintCallable, Category="Performance")
+		void DisableVSync();
+
+	UFUNCTION(Exec, BlueprintCallable, Category="Performance")
+		void EnableFSR();
+	UFUNCTION(Exec, BlueprintCallable, Category="Performance")
+		void DisableFSR();
+	UFUNCTION(Exec, BlueprintCallable, Category="Performance")
+		void SetFSRQuality();
+	UFUNCTION(Exec, BlueprintCallable, Category="Performance")
+		void SetFSRBalance();
+	UFUNCTION(Exec, BlueprintCallable, Category="Performance")
+		void SetFSRPerformance();
 };

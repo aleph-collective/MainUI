@@ -26,6 +26,7 @@ public class MainUI : ModuleRules
 			new string[]
 			{
 				"Core",
+				"Engine",
 				"UMG"
 				// ... add other public dependencies that you statically link with here ...
 			}
@@ -36,7 +37,6 @@ public class MainUI : ModuleRules
 			new string[]
 			{
 				"CoreUObject",
-				"Engine",
 				"Slate",
 				"SlateCore",
 				// ... add private dependencies that you statically link with here ...	
